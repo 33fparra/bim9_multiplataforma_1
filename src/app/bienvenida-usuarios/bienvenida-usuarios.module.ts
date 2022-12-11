@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 //import { BienvenidaUsuariosPageRoutingModule } from './bienvenida-usuarios-routing.module';
 
 import { BienvenidaUsuariosPage } from './bienvenida-usuarios.page';
+import { MenuPageModule } from '../menu/menu.module';
 
 
 //import { MenuPageModule } from '../menu/menu.module';
@@ -25,7 +26,8 @@ const routes: Routes = [
         CommonModule,
         FormsModule,
         IonicModule,
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
+        MenuPageModule
     ]
 })
 export class BienvenidaUsuariosPageModule {}

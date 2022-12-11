@@ -26,27 +26,7 @@ const routes: Routes = [
   {
     path: 'bienvenida-usuarios',
     loadChildren: () => import('./bienvenida-usuarios/bienvenida-usuarios.module').then(m => m.BienvenidaUsuariosPageModule)
-  },/*
-  {
-    path: 'historial-scan',
-    loadChildren: () => import('./pages/historial-scan/historial-scan.module').then( m => m.HistorialScanPageModule)
   },
-  {
-    path: 'mapa',
-    loadChildren: () => import('./pages/mapa/mapa.module').then( m => m.MapaPageModule)
-  },
-  {
-    path: 'navscan',
-    loadChildren: () => import('./pages/navscan/navscan.module').then( m => m.NavscanPageModule)
-  },
-  {
-    path: 'scan',
-    loadChildren: () => import('./pages/scan/scan.module').then( m => m.ScanPageModule)
-  },*/
-  {
-    path: 'navscan',
-    loadChildren: () => import('./pages/navscan/navscan.module').then(m => m.NavscanPageModule)
-  }
 ];
 
 @NgModule({

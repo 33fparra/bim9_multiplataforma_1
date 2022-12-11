@@ -12,7 +12,7 @@ export class MenuPage implements OnInit {
 
   ngOnInit() {
   }
-
+  //aqui esta el menu que se expande
   presionarMenu(){
     this.menuCtrl.toggle();
   }

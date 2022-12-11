@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bienvenida-usuarios.page.scss'],
 })
 export class BienvenidaUsuariosPage implements OnInit {
+usuario: any;
 
   constructor() { }
 
