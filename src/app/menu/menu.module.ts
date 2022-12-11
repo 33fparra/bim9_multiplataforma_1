@@ -4,27 +4,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
+import { MenuPageRoutingModule } from './menu-routing.module';
+
 import { MenuPage } from './menu.page';
-
-import { Routes, RouterModule } from '@angular/router'; //se agrega
-
-const routes: Routes = [
-  {
-    path:'',
-    component: MenuPage
-  }
-];
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)//,
-    //MenuPageRoutingModule
+    MenuPageRoutingModule
   ],
-  exports:[MenuPage], /**con esto hago que el menu pueda ser usado externamente */
+  exports:[MenuPage],
   declarations: [MenuPage]
 })
 export class MenuPageModule {}
-

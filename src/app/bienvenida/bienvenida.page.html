@@ -1,0 +1,94 @@
+<!-- <ion-header [translucent]="true"> -->
+
+  <!-- <ion-toolbar>
+    <ion-buttons slot="start">
+      
+      <ion-menu-button menu="menu"></ion-menu-button>
+      <ion-button [routerLink]="['/home']" routerLinkActive="router-link-active">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+    <ion-title>Bienvenido</ion-title>
+  </ion-toolbar> -->
+
+
+<!-- </ion-header>
+<ion-content class="ion-padding">
+  <app-menu></app-menu>
+</ion-content> -->
+<ion-content>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+      
+    </ion-header>
+    <ion-content>
+      <ion-list>
+
+        <ion-item>
+          <ion-icon name="information-circle">&nbsp;&nbsp;Ver Información</ion-icon>
+          Información
+        </ion-item>
+        <ion-item>
+          <ion-icon name="star"> &nbsp;  &nbsp; Ver Información</ion-icon>
+          Favoritos
+        </ion-item>
+        <ion-item>
+          <ion-icon name="send"> &nbsp;  &nbsp; Ver Información</ion-icon>
+          Envíos
+        </ion-item>
+        <ion-item>
+          <ion-icon name="person"> &nbsp;  &nbsp; Ver Información</ion-icon>
+          Cuenta
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Bienvenido</ion-title>
+        <ion-button [routerLink]="['/home']" routerLinkActive="router-link-active" slot="end">
+          <ion-icon slot="icon-only" name="home"></ion-icon>
+        </ion-button>
+      </ion-toolbar>
+      
+    </ion-header>
+
+  </div> 
+   <br>
+  <br>
+   <br>
+   <br>
+    <h5>Has ingresado Correctamente!</h5>
+
+    <h3>Nuestros Proyectos</h3><br>
+    <h4>Proyecto N°1</h4>
+    <ion-list>
+      <ion-item>
+    <img src="../assets/img/proy1.png">
+  </ion-item>
+  <h4>Proyecto N°2</h4>
+  <ion-item>
+    <img src="../assets/img/proy2.png">
+  </ion-item>
+  <h4>Proyecto N°3</h4>
+  <ion-item>
+    <img src="../assets/img/proy3.png">
+  </ion-item>
+  
+</ion-list>
+
+
+  <div>
+    <ion-button expand="full" color="danger" routerLink="/">Cerrar Sesión</ion-button>
+  </div>
+</ion-content>

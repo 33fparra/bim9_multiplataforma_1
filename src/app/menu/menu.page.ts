@@ -8,12 +8,17 @@ import { MenuController } from '@ionic/angular';
 })
 export class MenuPage implements OnInit {
 
-  constructor(private menuCtrl: MenuController) { }
+  constructor(public menuCtrl: MenuController) { }
 
   ngOnInit() {
   }
-  //aqui esta el menu que se expande
   presionarMenu(){
     this.menuCtrl.toggle();
+  }
+  openMenu() {
+    this.menuCtrl.open();
+  }
+ closeMenu() {
+    this.menuCtrl.close();
   }
 }
